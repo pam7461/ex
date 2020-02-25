@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background3</title>
+    <style>
+        p{
+            width:500px;
+            height:300px;
+            margin:50px auto;
+            border:1px solid black;
+
+            font-size:50px;
+            color:rgba(0,0,0,0.3);
+            text-align:center;
+            line-height:300px;
+        }
+        .box01{
+            background-image:linear-gradient(to right,#ff0000,#00ff00);
+        }
+        .box02{
+            background:linear-gradient(to right bottom,orange,aqua,darkred);
+        }
+        .box03{
+            background:linear-gradient(-45deg,red,green,blue,yellow,cyan);
+        }
+        .box04{
+            background:linear-gradient(to right,red 30%,green 40%,blue 60%);
+        }
+        .box05{
+            /* background-color:darkmagenta; */
+            background-image:linear-gradient(45deg,rgba(255,0,0,0.5),black);
+        }
+        .box06{
+            background:repeating-linear-gradient(to right,red 0%,yellow 10%);
+        }
+        .box07{
+            background:radial-gradient(circle at center 0%,red,green,blue);
+        }
+        .box08{
+            background:repeating-linear-gradient(yellow 0%,yellow 10%,red 10%,red 20%);
+        }
+        .box09{
+            background:repeating-radial-gradient(circle,white,white 5%,gray 5%,gray 10%);
+        }
+    </style>
+</head>
+<body>
+    <p class="box01">1</p>
+    <p class="box02">2</p>
+    <p class="box03">3</p>
+    <p class="box04">4</p>
+    <p class="box05">5</p>
+    <p class="box06">6</p>
+    <p class="box07">7</p>
+    <p class="box08">8</p>
+    <p class="box09">9</p>
+    <p class="box10">10</p>
+</body>
+</html>

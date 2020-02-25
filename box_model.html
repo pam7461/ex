@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        #box01{
+            width:300px;
+            height:300px;
+            background:red;
+            background-clip:border-box;
+        }
+        #box03{
+            width:300px;
+            height:300px;
+            background:red;
+            margin-top:50px;
+            margin-bottom:50px;
+            margin-left:120px;
+            margin-right:60px;
+        }
+        #box04{
+            width:300px;
+            height:300px;
+            background:green;
+            margin-top:20px;
+            margin-bottom:20px;
+            margin-left:20px;
+            margin-right:20px;
+        }
+        #box05{
+            width:300px;
+            height:300px;
+            border-top:2px solid red;
+            border-left:3px solid green;
+            border-right:3px solid blue;
+            border-bottom:4px solid cyan;
+            padding-top:10px;
+            padding-bottom:20px;
+            padding-left:30px;
+            padding-right:10px;
+            background-color:red;
+            background-clip:content-box;
+        }
+    </style>
+</head>
+<body>
+    <span class="box" id="box01">box01</span>
+    <span class="box" id="box02">box02</span>
+    <p class="box" id="box03">box03</p>
+    <h3 class="box" id="box04">box04</h3>
+    <p class="box" id="box05">box05</p>
+</body>
+</html>

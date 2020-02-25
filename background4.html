@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백그라운드 포지션</title>
+    <style>
+        ul{list-style:none;}
+        li{
+            /* box-sizing:border-box; */
+            display:inline-block;
+            width:50px;
+            height:50px;
+            margin:20px;
+            border:1px solid black;
+            padding:10px;
+            background:url('images/iconset.png');
+            background-clip:content-box;
+            text-align:center;
+            line-height:50px;
+        }
+        #box01{background-position:10px 10px}
+        #box02{background-position:-40px 10px}
+        #box03{background-position:10px -40px}
+        #box04{background-position:-40px -40px}
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="box01">box01</li>
+        <li id="box02">box02</li>
+        <li id="box03">box03</li>
+        <li id="box04">box04</li>
+    </ul>
+</body>
+</html>

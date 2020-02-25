@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float/overflow/clear</title>
+    <style>
+        div{
+            width:200px;
+            height:50px;
+            margin:20px auto;
+            background:red;
+            text-align:center;
+            line-height:50px;
+            color:white;
+            font-weight:bolder;
+        }
+        .box{
+            width:50px;
+        }
+        #box01{
+            background:green;
+            float:left;
+        }
+        #box02{
+            background:blue;
+            float:right;
+        }
+        #box03{
+            background:yellow;
+            color:black;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div id="box01" class="box">박스1</div>
+    <div id="box02" class="box">박스2</div>
+    <div id="box03">박스3</div>
+    <div id="box04">박스4</div>
+</body>
+</html>

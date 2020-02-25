@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃</title>
+    <style>
+        *{margin:0;border:none;padding:0;}
+        div{
+            border:1px solid #999;
+            padding:20px;
+        }
+        .width900{
+            width:900px;
+        }
+        .container{
+            margin:0 auto;
+            overflow:hidden;
+        }
+        .box_bor{
+            box-sizing:border-box;
+        }
+        .header{
+            margin-bottom:20px;
+        }
+        .content{
+            width:590px;
+            float:left;
+        }
+        .side{
+            width:290px;
+            margin-bottom:20px;
+            background:#ccc;
+            float:right;
+        }
+        .footer{
+            clear:both;
+        }
+        h2{
+            margin-bottom:12px;
+        }
+        p{
+            margin-bottom:10px;
+        }
+        ul{
+            margin-left:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container width900">
+        <div class="header width900 box_bor">
+            <h1>사이트 제목</h1>
+        </div>
+        <div class="content box_bor">
+            <h2>본문</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ab dolor quibusdam commodi numquam consequatur, et officiis officia ipsam maiores cum ut, maxime, autem doloremque id sed vel velit libero?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, incidunt soluta. Cum, numquam quam, alias deserunt, quidem laboriosam eveniet deleniti natus ipsam error aperiam similique animi porro explicabo! Ipsa, neque.</p>
+        </div>
+        <div class="side box_bor">
+            <h2>사이드바</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, harum incidunt placeat, atque quibusdam illo alias optio, fugiat cum officiis voluptates debitis eius laudantium? Temporibus voluptates ut nihil aut quia.</li>
+            </ul>
+        </div>
+        <div class="footer width900 box_bor">
+            <h2>푸터</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+    </div>
+</body>
+</html>

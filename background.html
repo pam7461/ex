@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        p{
+            width:100px;
+            height:100px;
+            margin:20px auto;
+            border:5px solid rgba(0,0,0,0.2);
+            padding:5px;
+        }
+        .box01{
+            /* background-color:red; */
+            /* background-clip:padding-box; */
+            background:red padding-box;
+        }
+        .box02{
+            /* background-color:green; */
+            /* background-clip:content-box; */
+            background:url();
+        }
+        .box03{
+            background-color:blue;
+            background-clip:border-box;
+        }
+        .box04{
+            /* background-image:url('images/background.png'); */
+            /* background-clip:padding-box; */
+            background:padding-box url('images/background.png');
+
+        }
+        .box05{
+            background-image:url('images/background.png');
+            background-clip:padding-box;
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+        .box06{
+            background-image:url('images/coffee01.jpg');
+            background-clip:padding-box;
+            background-size:110px;
+            background-repeat:no-repeat;
+        }
+        .box07{
+            background-image:url('images/coffee02.jpg');
+            background-size:50px;
+            background-repeat:no-repeat;
+            background-position:center;
+        }
+        .box08{
+            background-image:url('images/coffee03.jpg');
+            background-size:100%;
+            background-repeat:no-repeat;
+            background-origin:content-box;
+        }
+        .box09{
+            /* background-color:red; */
+            /* background-clip:padding-box; */
+            /* background-image:url('images/coffee01.jpg'); */
+            /* background-size:30%; */
+            /* background-repeat:no-repeat; */
+            /* background-origin:content-box; */
+            /* background-position:left center; */
+            background:red url('images/coffee01.jpg') no-repeat top center fixed;
+            /* background-attachment:fixed; */
+            background-clip:padding-box;
+            background-origin:content-box;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <p class="box01">박스01</p>
+    <p class="box02">박스02</p>
+    <p class="box03">박스03</p>
+    <p class="box04">박스04</p>
+    <p class="box05">박스05</p>
+    <p class="box06">박스06</p>
+    <p class="box07">박스07</p>
+    <p class="box08">박스08</p>
+    <p class="box09">박스09</p>
+    <p class="box10">박스10</p>
+</body>
+</html>

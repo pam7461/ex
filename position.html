@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <style>
+        *{margin:0;border:none;padding:0;}
+        div{width:500px;height:300px;}
+        #box01{background:red;}
+        #box02{
+            background:green;
+            position:relative;
+        }
+        .sub_box{
+            width:100px;
+            height:100px;
+            border:1px solid black;
+            position:absolute;
+        }
+        #sub_box01{left:0;top:0;}
+        #sub_box02{right:-100px;top:0;}
+        #sub_box03{left:0;bottom:0;}
+        #sub_box04{right:0;bottom:0;}
+        #sub_box05{left:200px;top:100px;}
+    </style>
+</head>
+<body>
+    <div id="box01">박스1</div>
+    <div id="box02">
+        <div class="sub_box" id="sub_box01"></div>
+        <div class="sub_box" id="sub_box02"></div>
+        <div class="sub_box" id="sub_box03"></div>
+        <div class="sub_box" id="sub_box04"></div>
+        <div class="sub_box" id="sub_box05"></div>
+    </div>
+</body>
+</html>

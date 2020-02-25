@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{margin:0;border:none;padding:0;}
+        div{font-size:20px;text-align:center;}
+        #container{width:900px;margin:0 auto;background:rgba(0,0,0,0.2);overflow:hidden;}
+        #header{width:900px;height:50px;background:rgba(255,0,0,0.5);overflow:hidden;}
+        img{width:30px;float:left;margin-top:10px;}
+        ul{float:right;list-style:none;}
+        li{float:left;margin:10px 0 0 20px;}
+        #side01{width:225px;height:600px;background:rgba(0,255,0,0.5);float:left;}
+        #content{width:450px;height:600px;background:rgba(0,0,255,0.5);float:left;}
+        #side02{width:225px;height:600px;background:rgba(0,255,255,0.5);float:right;}
+        #footer{width:900;height:30px;background:rgba(255,255,0,0.5);clear:both;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="header">
+            <img src="images/iconset.png" alt="로고">
+            <ul>
+                <li>회사소개</li>
+                <li>제품소개</li>
+                <li>공지사항</li>
+            </ul>
+        </div>
+        <div class="box" id="side01">side01</div>
+        <div class="box" id="content">content</div>
+        <div class="box" id="side02">side02</div>
+        <div class="box" id="footer">footer</div>
+    </div>
+</body>
+</html>

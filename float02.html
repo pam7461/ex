@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float/overflow/clear</title>
+    <style>
+        *{margin:0;border:none;padding:0;}
+        ul{
+            overflow:hidden;
+            width:400px;
+            height:400px;
+            margin:0 auto;
+            background:rgba(0,0,0,0.2);
+        }
+        li{
+            box-sizing:border-box;
+            width:100px;
+            height:100px;
+            border:2px solid black;
+            background:red;
+        }
+        #box01{
+            float:left;
+        }
+        #box02{
+            float:right;
+        }
+        #box03{
+            width:400px;
+            background:green;
+            clear:both;
+        }
+        #box04{
+            width:400px;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="box" id="box01">1</li>
+        <li class="box" id="box02">2</li>
+        <li class="box" id="box03">3</li>
+        <li class="box" id="box04">4</li>
+    </ul>
+    
+</body>
+</html>

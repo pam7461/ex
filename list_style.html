@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트스타일</title>
+    <style>
+        ul{
+            list-style:circle;
+        }
+        #best{list-style:square inside;color:red;text-decoration: underline;font-family:'Roboto';text-align:right;letter-spacing: 5em;}
+        p{
+            list-style:upper-roman;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="m_tit">대한민국 행정구역</h1>
+    <ul id="main_list">
+        <li class="list01">
+            서울특별시
+            <ul class="sub_list">
+                <li class="list02" id="best">관악구</li>
+                <li class="list02">강서구</li>
+                <li class="list02">강남구</li>
+                <li class="list02">강북구</li>
+                <li class="list02">강동구</li>
+            </ul>
+        </li>
+        <li class="list01">
+            인천광역시
+            <ul class="sub_list">
+                <li class="list02">남구</li>
+                <li class="list02">북구</li>
+                <li class="list02">동구</li>
+                <li class="list02">서구</li>
+            </ul>
+        </li>
+    </ul>
+    <p>대한민국</p>
+    
+</body>
+</html>
