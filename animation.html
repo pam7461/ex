@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니매이션</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+            position:absolute;
+            left:0;
+            top:0;
+            animation:ani 4s infinite linear;
+            animation-play-state: paused;
+            animation-fill-mode:forwards;
+        }
+
+        @keyframes ani{
+            0%{left:0;top:0;background:red;}
+            25%{left:300px;top:0;background:green;}
+            50%{left:300px;top:300px;background:blue;}
+            75%{left:0;top:300px;background:yellow;}
+            100%{left:0;top:0;background:red;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

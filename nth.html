@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth선택자</title>
+    <style>
+        ul{width:100px;list-style:none;margin:0 auto;}
+        ul>li{border:1px solid black;border-bottom:none;text-align:center;}
+        /* .last_li{border-bottom:1px solid black;} */
+        /* ul>li:nth-child(10){border-bottom:1px solid black;} */
+        /* ul>li:nth-child(2),ul>li:nth-child(4),ul>li:nth-child(6),ul>li:nth-child(8),ul>li:nth-child(10){background:red;} */
+        /* ul>li:first-child{background:green;} */
+        ul>li:last-child{border-bottom:1px solid black;}
+        ul>li:nth-child(2),ul>li:nth-child(7),ul>li:nth-child(7)+li{background:black;color:white;}
+
+        .container{width:100px;margin:0 auto;}
+        /* .container>p:nth-of-type(1){color:red;} */
+        /* .container>p:nth-of-type(3){color:green;} */
+        /* .container>p:last-of-type{color:blue;} */
+        /* .container>div:only-of-type{color:yellow;} */
+        a:target{color:darkmagenta;}
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="#gochoo">건강에 좋은 음식</a>
+    </h1>
+    <ul>
+        <li>귀리</li>
+        <li>아몬드</li>
+        <li>녹차</li>
+        <li>블루베리</li>
+        <li>마늘</li>
+        <li>브로콜리</li>
+        <li>연어</li>
+        <li>시금치</li>
+        <li>토마토</li>
+        <li>레드와인</li>
+    </ul>
+    <div class="container">
+        <h3>안녕하세요</h3>
+        <p>시금치</p>
+        <p>토마토</p>
+        <div>가지</div>
+        <div></div>
+        <p>오이</p>
+        <p id="gochoo">고추</p>
+    </div>
+</body>
+</html>

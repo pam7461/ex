@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        li{list-style:none;display:inline-block;width:300px;margin:0 30px;}
+        img{width:100%;}
+        li:nth-child(1):hover{
+            transform:skew(30deg,0);
+        }
+        li:nth-child(2):hover{
+            transform:skew(0,30deg);
+        }
+        li:nth-child(3):hover{
+            transform:skew(30deg,30deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>변형(transform)효과</h1>
+    <ul>
+        <li><img src="images/coffee01.jpg" alt="커피01"></li>
+        <li><img src="images/coffee02.jpg" alt="커피02"></li>
+        <li><img src="images/coffee03.jpg" alt="커피03"></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+    <div class="wrap">
+        <ul class="tit par">
+            <li class="tit_bar child_left">로그인</li>
+            <li class="tit_bar child_right">X</li>
+        </ul>
+        <ul class="cont par">
+            <li class="cont_list child_left">
+                <form>
+                    <ul class="login_form">
+                        <li class="form_txtbox">
+                            <input class="input_txt" type="text" placeholder="아이디" required autofocus>
+                        </li>
+                        <li class="form_txtbox">
+                            <input class="input_txt" type="password" placeholder="패스워드" required>
+                        </li>
+                        <li class="par">
+                            <div class="child_left">
+                                <input id="pass_chk" type="checkbox">
+                                <label for="pass_chk">비밀번호 저장</label>
+                            </div>
+                            <div class="ease_login child_right">
+                                <p>휴대폰 간편로그인<span>광고</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <input class="btn_sm" type="submit" value="로그인">
+                        </li>
+                    </ul>
+                </form>
+                <ul class="login_menu">
+                    <li class="login_menu_list">ID/PW찾기</li>
+                    <li class="login_menu_list">회원가입</li>
+                    <li class="login_menu_list" id="last_list">비회원 예매확인</li>
+                </ul>
+                <ul class="login_sns par">
+                    <li class="sns_list child_left"><img src="images/ico-facebook.png" alt="facebook"></li>
+                    <li class="sns_list child_left"><img src="images/ico-kakao.png" alt="kakao"></li>
+                    <li class="sns_list child_left"><img src="images/ico-naver.png" alt="naver"></li>
+                    <li class="sns_list child_left"><img src="images/ico-payco.png" alt="payco"></li>
+                </ul>
+            </li>
+            <li class="cont_list child_right">
+                <img class="banner" src="images/login_banner.jpg" alt="배너">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

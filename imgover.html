@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지오버</title>
+    <style>
+        *{margin:0;border:none;padding:0;color:#333;}
+        ul,ol,li{list-style:none;}
+        a{color:#333;}
+
+        ul{width:1200px;margin:30px auto;overflow:hidden;}
+        ul>li{position:relative;;float:left;width:380px;height:200px;margin-right:30px;}
+        ul>li:nth-child(3){margin-right:0;}
+        ul>li>div{width:380px;height:200px;overflow:hidden;}
+        ul>li>div.img>img{width:100%;}
+        ul>li>div.txt{transition:0.3s;position:absolute;left:0;top:201px;background:rgba(255,0,0,0.3);}
+        ul>li:hover>div.txt{top:0;}
+        ul>li>div.txt>h3{text-align:center;margin-top:50px;font-size:36px;color:white;}
+        ul>li>div.txt>p{text-align:center;margin-top:20px;font-size:20px;color:white;}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="img">
+                <img src="images/coffee01.jpg" alt="커피01">
+            </div>
+            <div class="txt">
+                <h3>하와이안커피</h3>
+                <p>하와이에서 나오는 맛있는 커피</p>
+            </div>
+        </li>
+        <li>
+            <div class="img">
+                <img src="images/coffee02.jpg" alt="커피02">
+            </div>
+            <div class="txt">
+                <h3>에디오디아커피</h3>
+                <p>에디오피아에서 나오는 맛있는 커피</p>
+            </div>
+        </li>
+        <li>
+            <div class="img">
+                <img src="images/coffee03.jpg" alt="커피03">
+            </div>
+            <div class="txt">
+                <h3>브라질코피</h3>
+                <p>브라질에서 나오는 맛있는 커피</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

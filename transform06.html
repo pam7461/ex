@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        li{list-style:none;display:inline-block;width:300px;margin:0 30px;}
+        img{width:100%;}
+        li{
+            background:red;
+            font-size:50px;
+            color:white;
+            text-align:center;
+            perspective: 300px;
+        }
+        li:nth-child(1):hover{
+            transform:rotateX(130deg);
+        }
+        li:nth-child(2):hover{
+            transform:rotateY(130deg);
+            backface-visibility:hidden;
+        }
+        li:nth-child(3):hover>img{
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>변형(transform)효과</h1>
+    <ul>
+        <li>BACK</li>
+        <li>BACK</li>
+        <li><img src="images/coffee03.jpg" alt="커피03"></li>
+    </ul>
+</body>
+</html>

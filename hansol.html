@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한솔제</title>
+    <style>
+        /* CSS Reset */
+        *{margin:0;border:none;padding:0;}
+        ul{list-style:none;}
+        a{text-decoration:none;}
+        
+        .wrap{width:900px;margin:0 auto;border:1px solid black;}
+        header{padding-top:20px;}
+        header>ul{overflow:hidden;}
+        header>ul>li{float:left;width:20%;text-align:center;}
+        header>ul>li>a{font-size:20px;font-weight:bolder;color:#333;}
+        header>ul>li>a:hover,header>ul>li>a:focus{color:#ffffff;background:#333333;}
+        section h2,footer address{color:red;}
+
+        section{}
+        section>ul{overflow:hidden;}
+        section>ul>li{float:left;width:33.3333333333%;overflow:hidden;position:relative;border-radius:50%;}
+        section>ul>li>img{width:100%;}
+        section>ul>li>h2{display:none;position:absolute;left:100px;top:100px;}
+        section>ul>li:hover>img{visibility:hidden;}
+        section>ul>li:hover>h2{display:block;}
+        footer{}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">사업영역</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">투자정보</a></li>
+                <li><a href="#">고객지원</a></li>
+            </ul>
+        </header>
+        <section>
+            <ul>
+                <li>
+                    <img src="images/coffee01.jpg" alt="커피1">
+                    <h2>커피01</h2>
+                </li>
+                <li>
+                    <img src="images/coffee02.jpg" alt="커피2">
+                    <h2>커피02</h2>
+                </li>
+                <li>
+                    <img src="images/coffee03.jpg" alt="커피3">
+                    <h2>커피03</h2>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <address>copyright : Mr Hong</address>
+        </footer>
+    </div>
+</body>
+</html>
