@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        .wrap{width:200px;margin:100px auto;position:relative;}
+        .wrap>div{width:100px;position:absolute;left:0;top:0;}
+        .wrap>div>img{width:100%;vertical-align:bottom;}
+        .wrap>div.left_box{transform:rotate(-45deg) scale(0.5);transform-origin:left bottom;
+            animation:ani01 0.3s infinite ease-in-out;    
+        }
+        .wrap>div.right_box{transform:rotate(45deg) scale(0.5);transform-origin:right bottom;
+            animation:ani02 0.3s infinite ease-in-out;
+        }
+        .wrap>div.center_box{transform:scale(1);transform-origin:center bottom;
+            animation:ani03 0.3s infinite ease-in;
+        }
+
+
+        @keyframes ani01{
+            0%{
+                transform:rotate(-45deg) scale(0.5);
+                transform-origin:left bottom;
+            }
+            50%{
+                transform:rotate(-45deg) scale(0.7);
+                transform-origin:left bottom;
+            }
+            100%{
+                transform:rotate(-45deg) scale(0.5);
+                transform-origin:left bottom;
+            }
+        }
+        @keyframes ani02{
+            0%{
+                transform:rotate(45deg) scale(0.5);
+                transform-origin:right bottom;
+            }
+            50%{
+                transform:rotate(45deg) scale(0.7);
+                transform-origin:right bottom;
+            }
+            100%{
+                transform:rotate(45deg) scale(0.5);
+                transform-origin:right bottom;
+            }
+        }
+
+        @keyframes ani03{
+            0%{
+                transform:scale(1);
+                transform-origin:center bottom;
+            }
+            50%{
+                transform:scale(0.7);
+                transform-origin:center bottom;
+            }
+            100%{
+                transform:scale(1);
+                transform-origin:center bottom;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left_box">
+            <img src="images/coffee01.jpg" alt="커피1">
+        </div>
+        <div class="right_box">
+            <img src="images/coffee02.jpg" alt="커피2">
+        </div>
+        <div class="center_box">
+            <img src="images/coffee03.jpg" alt="커피3">
+        </div>
+    </div>
+</body>
+</html>
